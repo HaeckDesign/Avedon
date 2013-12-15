@@ -1,0 +1,58 @@
+#avedontheme #options-group-4 .section{padding-left:20px;padding-right:20px}
+#avedontheme #options-group-4 .section hr{border:1px solid rgba(0,0,0,0.05);margin:10px 0}
+#avedontheme #options-group-4 .section ul li b{color:rgba(0,0,0,0.8);padding-right:2px;font-size:1.05em}
+#avedontheme #options-group-4 .section h4,#avedontheme #options-group-5 .section h5{color:#21759b}
+#avedontheme .section-images .option .controls{width:100%;padding:10px}
+#avedontheme .section-images .option .explain{max-width:100%}
+.avedonlogo{background:url(../images/avedon-logo.png) no-repeat;float:left;height:20px;margin-top:10px;padding-right:10px;width:90px}
+h2 .nav-tab{font-size:.7em;line-height:1em;margin-top:4px;margin-right:2px}
+h2 .nav-tab:hover{color:#21759B}
+.updated{max-width:764px;margin-bottom:0!important}
+#avedontheme{position:relative;z-index:0;max-width:780px;background:#fff}
+#avedontheme h3{cursor:default}
+#avedontheme p{margin-bottom:0;padding-bottom:10px;line-height:1.4em}
+#avedontheme .section{padding:10px 10px 0}
+#avedontheme .group{padding-bottom:40px;background:#fafafa}
+#avedontheme .section .heading{border-bottom:1px solid #dfdfdf;margin:0 0 15px;padding:10px 0}
+#avedontheme .section .controls{float:left;min-width:350px;width:54%;padding-right:2%}
+#avedontheme .section .explain{max-width:38%;float:left;font-size:12px;line-height:16px;color:#777}
+#avedontheme .section-checkbox .controls{width:98%}
+#avedontheme .section-checkbox .explain{max-width:94%}
+#avedontheme .of-input{width:100%}
+#avedontheme .controls select,#avedontheme .controls textarea{margin-bottom:10px;width:100%}
+#avedontheme .section-radio label,#avedontheme .section-multicheck label{float:left;max-width:90%;line-height:16px;margin-bottom:5px}
+#avedontheme input.checkbox,#avedontheme input.of-radio{width:30px;margin-top:2px;float:left}
+#avedontheme input.checkbox{clear:both}
+#avedontheme .controls .of-typography-unit{width:50px;margin-left:5px;float:left}
+#avedontheme .controls .of-typography-face{width:100px;margin-left:5px;float:left}
+#avedontheme .controls .of-typography-style{width:80px;margin-left:5px;margin-right:5px;float:left}
+#avedontheme .of-background-properties{clear:both;margin-top:18px}
+#avedontheme .section-background .wp-picker-container{margin-bottom:10px}
+#avedontheme .controls .of-radio-img-img{border:3px solid #f9f9f9;display:none;cursor:pointer;float:left;margin:0 5px 10px 0}
+#avedontheme .controls .of-radio-img-selected{border:3px solid #ccc}
+#avedontheme .controls .of-radio-img-img:hover{opacity:.8}
+#avedontheme .controls .of-border-style{width:120px;float:left}
+#avedontheme .hide{display:none}
+#avedontheme .of-option-image{max-width:340px;margin:3px 0 18px}
+#avedontheme .mini .controls select,#avedontheme .section .mini .controls{width:140px}
+#avedontheme .mini .controls input,#avedontheme .mini .controls{min-width:140px;width:140px}
+#avedontheme .mini .explain{max-width:74%}
+#avedontheme .section-editor .explain{max-width:98%;float:none;margin-bottom:5px}
+#avedontheme .controls input.upload{width:80%}
+#avedontheme .controls input.upload_button{float:right;cursor:pointer;border-color:#BBB}
+#avedontheme .controls input.upload_button:hover{color:#000;border-color:#666}
+#avedontheme .screenshot{float:left;margin-left:1px;position:relative;width:344px;margin-top:3px}
+#avedontheme .screenshot img{background:#FAFAFA;float:left;max-width:334px;margin-bottom:10px;border-color:#ccc #eee #eee #ccc;border-style:solid;border-width:1px;padding:4px}
+#avedontheme .screenshot .remove-image{background:url(../images/ico-delete.png) no-repeat;border:medium none;bottom:4px;display:block;float:left;height:16px;position:absolute;left:-4px;text-indent:-9999px;width:16px;padding:0}
+#avedontheme .screenshot .no_image .file_link{margin-left:20px}
+#avedontheme .screenshot .no_image .remove-button{bottom:0}
+#avedontheme .reset-button{float:left;cursor:pointer}
+#avedontheme-submit{border-top:1px solid #ECECEC;background-color:#F1F1F1;background-image:0;padding:7px 10px}
+#avedontheme .button-primary{float:right}
+#avedontheme .section:after{content:"";display:table;clear:both}
+#section-radio_image_one_credit,#section-radio_image_two_credit,#section-radio_image_three_credit,#section-radio_image_four_credit,#section-radio_image_five_credit,#section-radio_image_six_credit{margin-top:-15px}
+#avedontheme #section-radio_image_one_credit .heading,#avedontheme #section-radio_image_two_credit .heading,#avedontheme #section-radio_image_three_credit .heading,#avedontheme #section-radio_image_four_credit .heading,#avedontheme #section-radio_image_five_credit .heading,#avedontheme #section-radio_image_six_credit .heading{border-bottom:0;padding-top:0;margin-bottom:0}
+#avedontheme #section-radio_image_one_credit .explain,#avedontheme #section-radio_image_two_credit .explain,#avedontheme #section-radio_image_three_credit .explain,#avedontheme #section-radio_image_four_credit .explain,#avedontheme #section-radio_image_five_credit .explain,#avedontheme #section-radio_image_six_credit .explain{color:#ccc}
+#avedontheme .section-typography .controls,#avedontheme .section-typography .explain{float:none;width:auto}
+#avedontheme .controls .of-typography-size,#avedontheme .controls .of-border-width{width:80px;float:left}
+#avedontheme .controls .of-background-repeat,#avedontheme .controls .of-background-position,#avedontheme .controls .of-background-attachment{width:125px;margin-right:5px;float:left}
