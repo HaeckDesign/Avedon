@@ -4,7 +4,7 @@ Theme URI: http://code.google.com/p/avedon/
 Description: Avedon's framework is built using Twitter Bootstrap. It features a 100% responsive grid, retina ready font based icons, a clean layout, and much more. Avedon has been minimally coded (to improve speed), but also features several easy to use options including a full page rotating background image.
 Author: Matthew Haeck
 Author URI: http://haeckdesign.com/
-Version: 1.12
+Version: 1.14
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: black, blue, gray, white, dark, light, two-columns, right-sidebar, flexible-width, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, microformats, post-formats, theme-options, threaded-comments, photoblogging
@@ -31,15 +31,54 @@ See readme.txt for all license information.
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
+.blog #primary .post {
+	background-color: #f5f5f5;
+	border: none;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+}
+.search #primary .post {
+	background: none;
+	border: none;
+	margin: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-top: 0;
+}
+.blog #primary .post .container {
+	background: none;
+	padding-left: 0;
+}
+.blog #primary .post .container .container {
+	background-color: #f5f5f5;
+}
+.blog #primary .post .container .panel-heading {
+margin-left: 0;
+}
+.search-no-results #side {display: none;}
+.search-no-results .panel-default {background: #F5F5F5;margin-top: 20px;}
+
 #primary .col-md-8 { padding-left: 0; }
 #primary .col-xs-11  { margin-top: 0;padding-left: 0; }
 #primary pre, #primary code, #primary pre code  { white-space: pre-wrap; }
 .col-md-8 .panel-default { background-color: #f5f5f5; }
 
-
 /* Typography */
 
 h1, h2, h3, h4, h5, h6, .home .tiptop div b, h1.panel-title, h3.panel-title { letter-spacing: -0.01em; }
+.single-entry .panel-body h1, .page .panel-body h1 {font-size: 2em;}
+.single-entry .panel-body h2, .page .panel-body h2 {font-size: 1.8em;}
+.single-entry .panel-body h3, .page .panel-body h3 {font-size: 1.6em;}
+.single-entry .panel-body h4, .page .panel-body h4 {font-size: 1.4em;}
+.single-entry .panel-body h5, .page .panel-body h5 {font-size: 1.3em;}
+.single-entry .panel-body h6, .page .panel-body h6 {font-size: 1.2em;}
 a, a:hover, a:focus, #primary a:focus, #primary a:hover { text-decoration: none; -moz-text-decoration-line: none; }
 .post-meta, .post-meta a,
 .panel-footer, .panel-footer a,
@@ -50,7 +89,9 @@ a, a:hover, a:focus, #primary a:focus, #primary a:hover { text-decoration: none;
 	color: rgba(0,0,0,0.5);
 	padding-top: 5px;
 }
-#primary .post .panel-body, #primary .post .meta { padding-left: 5px; padding-right: 5px; }
+#primary .post .meta { padding-left: 10px; padding-right: 10px; }
+#primary .post .panel-body { padding-left: 5px; padding-right: 5px; }
+#primary .post .panel-body p { padding-left: 5px; padding-right: 5px; }
 #primary .panel .panel-title { margin-top: 5px; }
 #primary, #primary .panel .panel-title { -ms-word-wrap: break-word; word-wrap: break-word; }
 #primary .panel a .panel-title:hover { cursor: pointer; }
@@ -103,7 +144,8 @@ h1#text-large {margin-top: 10px;}
 .container .panel-body { padding: 0; }
 .home .container .panel-body { padding: 5px; }
 .single .container .panel-body,
-.page .container .panel-body {
+.page .container .panel-body,
+.post .container .panel-body {
 	padding-bottom: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -146,7 +188,7 @@ body#wrap .navbar-fixed-top + #primary { padding-top: 50px; }
     max-width: 100%;
 }
 .container a .thumbnail {
-	margin: 10px 10px 0px 0px;
+	margin: 15px 15px 0px 0px;
 }
 #primary .post .container img {
 	margin-right: 15px;
@@ -263,6 +305,7 @@ footer .col-xs-12 h4,
     margin-bottom: -60px;
 }
 
+
 /* Pager */
 
 .pager li {
@@ -276,7 +319,10 @@ footer .col-xs-12 h4,
 	margin-bottom: 15px;
 }
 #primary .btn-group-justified {
-	padding: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
 }
 
 /* Widget */
@@ -376,6 +422,9 @@ border-bottom: 0 solid rgba(0,0,0,0);
 #wp-calendar caption { text-align: right; margin-bottom: 10px; margin-top: -5px; color: rgba(0,0,0,0.4); }
 #wp-calendar #prev { text-align: left;padding-top: 10px;padding-left: 10px;}
 #wp-calendar #next { text-align: right;padding-top: 10px;padding-right: 10px;}
+.widget_archive ul.children, .widget_categories ul.children, .widget_pages ul.children, .widget_nav_menu ul.sub-menu {
+	padding-left: 10px;font-size: 0.98em;margin-top: 5px;border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
 .sidebar-nav .widget_search:first-child { margin-top: 2px;margin-bottom: 2px; }
 .sidebar-nav .widget_search:first-child .row{ margin-top: -2px; }
 .input, button, select, textarea {max-width: 100%;}
@@ -386,9 +435,9 @@ border-bottom: 0 solid rgba(0,0,0,0);
 	text-shadow: 0 0 1px rgba(0,0,0,0.1);
 }
 .col-md-8 a.btn {
-	margin-bottom: 0;
+	margin-bottom: 5px;
     margin-left: 15px;
-    margin-right: 0;
+    margin-right: -10px;
     margin-top: 25px;
 }
 .socialbox {
@@ -540,6 +589,14 @@ ol.commentlist {
 }
 .single-entry .cattag {
 	margin-top: -20px;
+}
+.single .post-tag {
+	padding: 15px 10px 5px 10px;
+	color: rgba(0, 0, 0, 0.5);
+}
+.single .post-tag span {
+	display: inline-block;
+	padding-top: 2px;
 }
 .visuallyhidden {
 	border: 0;
@@ -927,12 +984,23 @@ body {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
 }
-.home .panel-default > .panel-heading,
 .single .panel-default > .panel-heading {
     margin-bottom: 0;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+}
+#wrap.home .panel-default > .panel-heading {
+    margin-bottom: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -5px;
+}
+#wrap.home .post > .panel-heading {
+    margin-bottom: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -5px;
 }
 .archive .panel-default > .panel-heading {
     margin-bottom: 0;
@@ -940,6 +1008,13 @@ body {
     margin-right: -15px;
     margin-top: 0;
 }
+.page .panel-default > .panel-heading {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
 #commentsbox > .panel-heading {
 	margin: 0;
 }
@@ -1149,5 +1224,7 @@ min-height: 20px;
 padding-left: 25px;
 padding-right: 25px;
 }
+.logged-in nav { margin-top: 46px; }
+
 }
 

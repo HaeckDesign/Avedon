@@ -1,7 +1,7 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.12
+ * @since Avedon 1.14
  */
 
 get_header(); ?>
@@ -27,8 +27,11 @@ get_header(); ?>
 <?php if ( has_post_thumbnail() ) ?>
 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 <?php the_post_thumbnail( 'primary-post-thumbnail', array('class' => 'thumbnail col-xs-12 col-md-3 img-responsive'));?></a>
-<div class="panel-body"><?php the_excerpt();?></div>
-</div>
+<div class="panel-body">
+
+<?php if ( 'posts' == get_option( 'show_on_front' ) ) { echo the_excerpt(); } else { echo the_content(); } ?>
+
+</div></div>
 
 <?php endwhile; ?>
 <?php avedon_content_nav('nav-below');?>
