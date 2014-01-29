@@ -2,10 +2,10 @@
 
 Contributors: Matthew Haeck
 Tags: bootstrap, responsive, wordpress theme
-Stable tag: 1.14
+Stable tag: 1.15
 License: GPLv3
 
-Avedon Theme - http://code.google.com/p/avedon/
+Avedon Theme - http://haeckdesign.com/freebies/themes/avedon-wordpress-bootstrap-theme
 License: GNU
 Copyright: Haeck Design, http://haeckdesign.com/
 
@@ -51,6 +51,10 @@ Initial Release
 == Version 1.14 ==
 
 Transitoned to BootStrap 3
+
+== Version 1.15 ==
+
+CSS Fixes and Orginization
 
 
 == Licenses (See license.txt for full license information) ==
