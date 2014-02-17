@@ -110,7 +110,7 @@
 			    	$(vars.prev_slide +','+vars.next_slide).mouseover(function() {
 					   $(this).stop().animate({opacity:1},100);
 					}).mouseout(function(){
-					   $(this).stop().animate({opacity:0.6},100);
+					   $(this).stop().animate({opacity:0.8},100);
 					});
 				}
 

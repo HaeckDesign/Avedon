@@ -1,10 +1,23 @@
+#avedontheme #options-group-1 .section,
+#avedontheme #options-group-2 .section,
+#avedontheme #options-group-3 .section,
+#avedontheme #options-group-4 .section {padding-left:20px;padding-right:20px}
+#avedontheme #options-group-2 .section hr,
+#avedontheme #options-group-3 .section hr {border:1px solid rgba(0,0,0,0.05);margin:10px 0}
+#avedontheme #options-group-3 .section ul li b,
+#avedontheme #options-group-3 .section ul li b {color:rgba(0,0,0,0.8);padding-right:2px;font-size:1.05em}
+#avedontheme #options-group-3 .section h4,
+#avedontheme #options-group-4 .section h5{color:#21759b}
+#avedontheme #options-group-3 .section-info h4 { border-bottom: 0;padding: 0; margin: 0; }
 #avedontheme #options-group-4 .section{padding-left:20px;padding-right:20px}
 #avedontheme #options-group-4 .section hr{border:1px solid rgba(0,0,0,0.05);margin:10px 0}
 #avedontheme #options-group-4 .section ul li b{color:rgba(0,0,0,0.8);padding-right:2px;font-size:1.05em}
 #avedontheme #options-group-4 .section h4,#avedontheme #options-group-5 .section h5{color:#21759b}
+#avedontheme #options-group-4 a {text-decoration: none;}
+#avedontheme #options-group-4 .icon16 {margin-top: -12px;margin-right: 8px;}
 #avedontheme .section-images .option .controls{width:100%;padding:10px}
 #avedontheme .section-images .option .explain{max-width:100%}
-.avedonlogo{background:url(../images/avedon-logo.png) no-repeat;float:left;height:20px;margin-top:10px;padding-right:10px;width:90px}
+.avedonlogo{background:url(../images/avedon-logo.png) no-repeat;float:left;height:20px;margin-top:10px;padding-right:12px;width:90px}
 h2 .nav-tab{font-size:.7em;line-height:1em;margin-top:4px;margin-right:2px}
 h2 .nav-tab:hover{color:#21759B}
 .updated{max-width:764px;margin-bottom:0!important}

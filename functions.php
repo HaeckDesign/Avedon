@@ -129,7 +129,7 @@ function avedon_widgets_init() {
     'name' => 'Call to Action',
     'id'   => 'pitch-content',
     'description'   => 'Under content, over middle - Best used for call to action.',
-    'before_widget' => '<div id="pitch" class="container"><div id="%1$s" class="container widget %2$s">',
+    'before_widget' => '<div class="pitch container"><div id="%1$s" class="container-fluid widget %2$s">',
     'after_widget'  => '</div></div>',
     'before_title'  => '<h4>',
     'after_title'   => '</h4>'
@@ -139,7 +139,7 @@ function avedon_widgets_init() {
     'name' => 'Middle Content',
     'id'   => 'middle-content',
     'description'   => 'Below content, above the footer.',
-    'before_widget' => '<div id="middle"><div id="%1$s" class="container"><div class="container col-xs-12 widget %2$s">',
+    'before_widget' => '<div class="middle"><div id="%1$s" class="container"><div class="container-fluid col-xs-12 widget %2$s">',
     'after_widget'  => '</div></div></div>',
     'before_title'  => '<h4>',
     'after_title'   => '</h4>'
@@ -215,7 +215,7 @@ endif;
 
 function avedon_excerpt($more) {
        global $post;
-  return '<a href="'. get_permalink($post->ID) . '" class="btn btn-default btn-sm pull-right">Continue Reading</a>';
+  return '&#8230;<a href="'. get_permalink($post->ID) . '" class="btn btn-default btn-sm pull-right">Continue Reading</a>';
 }
 add_filter('excerpt_more', 'avedon_excerpt');
 

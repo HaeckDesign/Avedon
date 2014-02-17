@@ -1,14 +1,14 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.15
+ * @since Avedon 1.16
  */
 
 get_header(); ?>
 
 <div id="primary" class="container">
 <div class="col-md-8">
-<div class="container panel panel-default">
+<div class="container-fluid panel panel-default">
 <h1 class="text-large">
 <?php
 if ( is_day() ) {
@@ -42,8 +42,8 @@ _e( 'Blog Archives', 'avedon' );
 
 <?php get_posts(); while (have_posts()) : the_post(); ?>
 
-<div class="container panel panel-default">
-<div class="row panel-heading">
+<div <?php post_class('panel panel-default'); ?>>
+<div class="panel-heading container-fluid">
 <a href="<?php the_permalink(); ?>" title="<?php the_title();?>" class="col-xs-11"><h3 class="panel-title"><?php the_title();?></h3></a>
 <span class="badge col-xs-1"><?php comments_number('0','1','%'); ?></span></div>
 
@@ -52,8 +52,9 @@ _e( 'Blog Archives', 'avedon' );
 <?php the_post_thumbnail( 'primary-post-thumbnail', array('class' => 'thumbnail col-xs-12 col-md-3 img-responsive'));?></a>
 <div class="panel-body">
 <span class="meta"><?php echo avedon_posted_on();?></span>
-<?php the_excerpt();?></div>
-</div>
+<?php the_excerpt();?>
+
+</div></div>
 
 <?php endwhile; ?>
 <?php avedon_content_nav('nav-below');?>

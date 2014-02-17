@@ -1,19 +1,19 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.15
+ * @since Avedon 1.16
  */
 
 get_header(); ?>
 
 <div id="primary" class="container">
 <div <?php post_class('col-md-8'); ?>>
-<div class="container panel panel-default">
+<div class="container-fluid panel panel-default">
 
 <?php get_posts(); while (have_posts()) : the_post(); ?>
 
-<div class="container panel panel-default">
-<div class="row panel-heading">
+<div <?php post_class('panel panel-default'); ?>>
+<div class="panel-heading container-fluid">
 
 <a href="<?php the_permalink(); ?>" title="<?php the_title();?>" class="col-xs-11"><h3 class="panel-title"><?php the_title();?></h3></a>
 <span class="badge col-xs-1"><?php comments_number('0','1','%'); ?></span></div>

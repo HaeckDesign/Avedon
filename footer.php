@@ -1,7 +1,7 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.15
+ * @since Avedon 1.16
  */
 ?>
 
@@ -26,22 +26,22 @@
 <?php if ( ! dynamic_sidebar( 'bottom-right' ) ): ?>
 <div class="widget widget_text"><div class="textwidget"><h4 class="widget-title">Subscribe</h4><i class="subicon glyphicon glyphicon-envelope"></i><p class="margin-bottom-10">Subscribe to our newsletter and stay up to date!</p>
 
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search" value="" name="s" id="s">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="searchsubmit">Signup</button>
+      </span></div>
 
-<div class="input-group">
-<input type="text" class="form-control">
-<span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
-</div>
 
-</form></div></div>
+</div></div>
 <?php endif; ?>
 </div>
 
-<div class="col-xs-12">
-<?php if ( ! dynamic_sidebar( 'footer-content' ) ); ?>
-</div>
+<div class="foot col-xs-12"><?php if ( ! dynamic_sidebar( 'footer-content' ) ); ?></div>
 
-<span class="col-md-11"><?php echo of_get_option('footer_text', 'no entry'); ?></span>
-<span class="col-md-1 pull-right totop hidden-sm"><a href="#"><i class="glyphicon glyphicon-chevron-up"></i></a></span>
+<div class="row">
+<span class="col-xs-11"><?php echo of_get_option('footer_text', 'no entry'); ?></span><span class="col-xs-1 text-right totop hidden-xs"><a href="#"><i class="glyphicon glyphicon-chevron-up"></i></a></span>
+</div>
 </div>
 </footer>
 

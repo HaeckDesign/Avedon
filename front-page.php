@@ -1,24 +1,24 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.15
+ * @since Avedon 1.16
  */
 
 get_header(); ?>
 
 <div id="primary" class="container">
 <div class="col-md-8">
-<div class="container panel panel-default">
+<div class="container-fluid panel panel-default">
 <?php $text = of_get_option('headertext'); if ($text) { echo '<h1 class="text-large">' . of_get_option('headertext') . '</h1>'; }; ?>
 </div>
 <?php $header_image = get_header_image(); if ( ! empty( $header_image ) ) : ?>
-<div class="hometop"><img src="<?php echo esc_url( $header_image ); ?>" alt="headerimg" /></div>
+<div class="hometop thumbnail img-responsive"><img src="<?php echo esc_url( $header_image ); ?>" alt="headerimg" /></div>
 <?php endif; ?>
 
 <?php get_posts(); while (have_posts()) : the_post(); ?>
 
-<div <?php post_class('container panel panel-default'); ?>>
-<div class="row panel-heading">
+<div <?php post_class('panel panel-default'); ?>>
+<div class="panel-heading container-fluid">
 
 <a href="<?php the_permalink(); ?>" title="<?php the_title();?>" class="col-xs-11"><h3 class="panel-title"><?php the_title();?></h3></a>
 <span class="badge col-xs-1"><?php comments_number('0','1','%'); ?></span></div>

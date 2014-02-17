@@ -1,21 +1,21 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.15
+ * @since Avedon 1.16
  */
 
 get_header(); ?>
 
 <div id="primary" class="container">
 <div <?php post_class('col-md-8'); ?>>
-<div class="container panel panel-default">
+<div class="container-fluid panel panel-default">
 <?php if ( have_posts() ) : ?>
-<h1 class="text-large"><?php printf( __( 'Search Results for: %s', 'avedon' ), '<span>' . get_search_query() . '</span>' ); ?></h1></div>
+<h1 class="text-large"><?php printf( __( 'Search Results for: %s', 'avedon' ), '<small>' . get_search_query() . '</small>' ); ?></h1></div>
 
 <?php get_posts(); while (have_posts()) : the_post(); ?>
 
-<div class="container panel panel-default">
-<div class="row panel-heading">
+<div class="panel panel-default">
+<div class="panel-heading container-fluid">
 
 <a href="<?php the_permalink(); ?>" title="<?php the_title();?>" class="col-xs-11"><h3 class="panel-title"><?php the_title();?></h3></a>
 <span class="badge col-xs-1"><?php comments_number('0','1','%'); ?></span></div>
@@ -32,9 +32,9 @@ get_header(); ?>
 <?php endwhile; ?>
 <?php else : ?>
 
-<div class="single-entry group">
+<div>
 <h1 id="overview"><?php _e( 'No Results Found', 'avedon' ); ?></h1><hr />
-<p class="lead"><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps you should try again with a different search term.', 'avedon' ); ?></p><hr />
+<p class="panel-body"><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps you should try again with a different search term.', 'avedon' ); ?></p><hr />
 <?php get_search_form(); ?>
 </div>
 

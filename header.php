@@ -1,7 +1,7 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.15
+ * @since Avedon 1.16
 */
 ?>
 
@@ -29,7 +29,7 @@
 
 <nav class="navbar navbar-inverse <?php echo of_get_option('navbar_attachment'); ?>" role="navigation">
 <div class="container">
-<div class="navbar-header container text-right col-md-offset-1">
+<div class="navbar-header">
 
 <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 <?php if ( of_get_option('primary_logo') ) { echo '<img src=' . of_get_option('primary_logo') . ' alt="home" />'; } else { echo bloginfo( 'name' ); } ?></a>
