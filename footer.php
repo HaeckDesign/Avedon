@@ -1,7 +1,7 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.16
+ * @since Avedon 1.17
  */
 ?>
 
@@ -26,14 +26,12 @@
 <?php if ( ! dynamic_sidebar( 'bottom-right' ) ): ?>
 <div class="widget widget_text"><div class="textwidget"><h4 class="widget-title">Subscribe</h4><i class="subicon glyphicon glyphicon-envelope"></i><p class="margin-bottom-10">Subscribe to our newsletter and stay up to date!</p>
 
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search" value="" name="s" id="s">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button" id="searchsubmit">Signup</button>
-      </span></div>
+<div class="input-group">
+<input type="text" class="form-control" placeholder="Search" value="" name="s" id="s">
+<span class="input-group-btn">
+<button class="btn btn-default" type="button" id="searchsubmit">Signup</button>
+</span></div></div></div>
 
-
-</div></div>
 <?php endif; ?>
 </div>
 

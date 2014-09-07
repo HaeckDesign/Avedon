@@ -185,7 +185,6 @@ function avedontheme_options() {
 		'std' => '#4BAAD3',
 		'type' => 'color' );
 
-
 	$options[] = array(
 		'name' => "Invert Colors",
 		'desc' => "Invert the white and black portions of the site layout. (Light to dark).",
@@ -248,7 +247,6 @@ function avedontheme_options() {
 		'name' => __('Social', 'avedon_theme_options'),
 		'type' => 'heading');
 
-
 	$options[] = array(
 		'name' => __('Enable Social Icons', 'avedon_theme_options'),
 		'desc' => __('Click here to enable links to your social profiles.', 'avedon_theme_options'),
@@ -297,14 +295,12 @@ function avedontheme_options() {
 		'class' => 'hidden',
 		'type' => 'text');
 
-
 	$options[] = array(
 		'name' => __('Instagram Link', 'avedon_theme_options'),
 		'desc' => __('Instagram Link', 'avedon_theme_options'),
 		'id' => 'instagram_uid',
 		'class' => 'hidden',
 		'type' => 'text');
-
 
 	$options[] = array(
 		'name' => __('Foursquare Link', 'avedon_theme_options'),

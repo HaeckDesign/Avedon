@@ -1,7 +1,7 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.16
+ * @since Avedon 1.17
  */
 
 get_header(); ?>
@@ -42,12 +42,9 @@ if ( has_post_format( 'gallery' )) { echo '<i class="cattag glyphicon glyphicon-
 <?php if (has_tag()) { ?>
 
 <div class="panel-footer">
-
 <span><b>Category:</b> <?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', 'avedon' ) ); ?></span>&nbsp;&nbsp;
 <span><b>Tag:</b> <?php the_tags('') ?></span>
-
 </div>
-
 
 <?php } ?>
 

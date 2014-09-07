@@ -1,7 +1,7 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.16
+ * @since Avedon 1.17
  */
 
 get_header(); ?>
@@ -31,7 +31,7 @@ printf( __( 'Category Archives: %s', 'avedon' ), '' . single_cat_title( '', fals
 $category_description = category_description();
 if ( $category_description )
 echo '</h1>';
-echo apply_filters( 'category_archive_meta', '<span class="category-archive-meta">' . $category_description . '</span>' );
+echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
 } else {
 echo '</h1>';
 _e( 'Blog Archives', 'avedon' );

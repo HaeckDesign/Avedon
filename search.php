@@ -1,7 +1,7 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.16
+ * @since Avedon 1.17
  */
 
 get_header(); ?>
@@ -26,7 +26,6 @@ get_header(); ?>
 <div class="panel-body">
 <span class="meta"><?php echo avedon_posted_on();?></span>
 <?php the_excerpt();?>
-
 </div></div>
 
 <?php endwhile; ?>
@@ -36,12 +35,11 @@ get_header(); ?>
 <h1 id="overview"><?php _e( 'No Results Found', 'avedon' ); ?></h1><hr />
 <p class="panel-body"><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps you should try again with a different search term.', 'avedon' ); ?></p><hr />
 <?php get_search_form(); ?>
-</div>
+</div></div>
 
 <?php endif ;?>
 <?php avedon_content_nav( 'nav-below' ); ?>
+</div>
 
-</div>
 <?php get_sidebar(); ?>
-</div>
 <?php get_footer(); ?>

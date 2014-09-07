@@ -1,8 +1,8 @@
 <?php
 /**
  * @subpackage Avedon
- * @since Avedon 1.16
-*/
+ * @since Avedon 1.17
+ */
 ?>
 
 <!DOCTYPE html>

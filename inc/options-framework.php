@@ -252,7 +252,7 @@ function options_typography_get_os_fonts() {
 function options_typography_get_google_fonts() {
 	// Google Font Defaults
 	$google_faces = array(
-		'Archivon Arrow, sans-serif' => 'Archivon Arrow',
+		'Archivon Narrow, sans-serif' => 'Archivon Narrow',
 		'Bitter, sans-serif' => 'Bitter',
 		'Cabin, sans-serif' => 'Cabin',
 		'Comfortaa, sans-serif' => 'Comfortaa',
