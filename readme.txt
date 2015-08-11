@@ -9,7 +9,7 @@ Avedon Theme - http://haeckdesign.com/freebies/themes/avedon-wordpress-bootstrap
 License: GNU
 Copyright: Haeck Design, http://haeckdesign.com/
 
-
+<img src="https://s3-us-west-2.amazonaws.com/avedon/avedon-wordpress-theme-web-design-haeckdesign.jpg" title="Avedon WordPress Theme - Haeck Design" alt="Avedon WordPress Theme - Haeck Design" />
 
 == Description ==
 
