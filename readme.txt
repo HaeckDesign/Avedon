@@ -9,8 +9,6 @@ Avedon Theme - http://haeckdesign.com/freebies/themes/avedon-wordpress-bootstrap
 License: GNU
 Copyright: Haeck Design, http://haeckdesign.com/
 
-<img src="https://s3-us-west-2.amazonaws.com/haeck/avedon/avedon-wordpress-theme-web-design-haeckdesign.jpg" title="Avedon WordPress Theme - Haeck Design" alt="Avedon WordPress Theme - Haeck Design" />
-
 == Description ==
 
 Avedon's framework is built using Bootstrap (Twitter). The background image rotator is a javascript developed by Build Internet. If you like the functionality we certainly suggest tossing them a little "social support". The typographic options are provided by Google Fonts, which is an absolute must for any designer.
